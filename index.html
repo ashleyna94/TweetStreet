@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>
+    Tweet Street
+  </title>
+</head>
+
+<body class=" bg-dark text-info">
+  <div class="container">
+    <div class="text-center">
+      <h2>
+        Tweet Street
+      </h2>
+      <hr>
+      <p>
+        Exploratory data analysis project to study Social media (Twitter) sentiments and Stock market information.
+        Both values are collected for a period of 1 month (Nov-2017) and Overall period of 10 years for specific industry study.
+        <br>We have picked 7 famous companies from various industries and collected tweet sentiments and stock market information.
+        Data analysis and visualization is acheived using
+        <em class="font-italic">Python </em>libraries namely
+        <em class="font-italic">Pandas, Matplotlib, Tweepy, SentimentAnalyzer.</em>
+        <br>
+        <br>
+        <button type="button" class="btn btn-outline-info">
+          <a class="text-info" href="https://github.com/sadhu1002/TweetStreet">Git Hub</a>
+        </button>
+        <!-- <i class="fa fa-twitter" style="font-size:20px;"></i>
+          <i class="fa fa-line-chart" style="font-size:20px;"></i>  -->
+      </p>
+    </div>
+
+
+
+    <br>
+    <br>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active text-info" data-toggle="tab" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-info" data-toggle="tab" href="#menu_pie">Pie charts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-info" data-toggle="tab" href="#menu_bar">Bar charts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-info" data-toggle="tab" href="#menu_daily">Daily charts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-info" data-toggle="tab" href="#menu_twoday">Two day averages</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-info" data-toggle="tab" href="#menu_weekly">Weekly averages</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-info" data-toggle="tab" href="#menu_stocks">Stock prices</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-info" data-toggle="tab" href="#menu_presentation">Presentation</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link text-info" data-toggle="tab" href="#menu_about">About</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="home" class="container tab-pane active">
+        <h3>Introduction</h3>
+
+        <p>
+          Tweet Street is a data analysis project to identify if any correlation exists between tweet sentiments and stock prices.</p>
+        <ul class="list-inline bg-dark text-info">
+          <strong>Our target stocks are as follows:</strong>
+          <li class="list-inline-item">Amazon </li>
+          <li class="list-inline-item">Apple </li>
+          <li class="list-inline-item">Macy's </li>
+          <li class="list-inline-item">Netflix</li>
+          <li class="list-inline-item">Nike </li>
+          <li class="list-inline-item">Visa </li>
+          <li class="list-inline-item">Walmart</li>
+        </ul>
+        <ul class="list-group bg-dark text-info">
+          <strong>We have the following visualizations in place:</strong>
+          <li>Percentage comparisons of all target stocks (Pie charts)</li>
+          <li>Overall Stock closing prices vs Tweet Sentiments (Bar charts)</li>
+          <li>Daily stock prices vs Tweet Sentiments</li>
+          <li>Two day moving averages of stock prices vs Tweet Sentiments</li>
+          <li>Weekly moving averages of stock prices vs Tweet Sentiments</li>
+          <li>Stock prices (daily, two-day, weekly) averages</li>
+          <li>Individual stock and tweet charts</li>
+        </ul>
+        <br>
+
+        <strong>Data Sources:</strong>
+
+        <ul class="list-group bg-dark text-info">
+          <li>Jefferson-Henrique GitHub Project (Historic Tweets), Tweepy (Daily Tweets)</li>
+          <li>Yahoo Finance(Historic Stocks), IEX API(Daily Stocks)</li>
+        </ul>
+        <br>
+      </div>
+      <div id="menu_pie" class="container tab-pane fade">
+        <br>
+        <h3>Percentage comparisons of all target stocks (Pie charts)</h3>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="figures/ppt/PieChart_StockPrices.png" style="padding:5%;height:90%;width:80%">
+            </div>
+            <div class="col-md-6">
+              <img src="figures/ppt/PieChart_TweetSentiments.png" style="padding:5%;height:90%;width:80%">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu_bar" class="container tab-pane fade">
+        <br>
+        <h3>Overall Stock closing prices vs Tweet Sentiments (Bar charts)</h3>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/ppt/AverageSentiments_Tweets_Bar.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/ppt/PercentageIncrease_Stocks_Bar.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu_daily" class="container tab-pane fade">
+        <br>
+        <h3>Daily stock prices vs Tweet Sentiments</h3>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/DailySentiments_vs_DailyStocks_@amazon.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/DailySentiments_vs_DailyStocks_@Apple.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/DailySentiments_vs_DailyStocks_@netflix.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/DailySentiments_vs_DailyStocks_@Nike.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/DailySentiments_vs_DailyStocks_@Macys.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/DailySentiments_vs_DailyStocks_@Visa.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/DailySentiments_vs_DailyStocks_@Walmart.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu_twoday" class="container tab-pane fade">
+        <br>
+        <h3>Two day average stock prices and sentiments</h3>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/TwoDaySentiments_vs_TwoDayStocks_@amazon.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/TwoDaySentiments_vs_TwoDayStocks_@Apple.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/TwoDaySentiments_vs_TwoDayStocks_@netflix.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/TwoDaySentiments_vs_TwoDayStocks_@Nike.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/TwoDaySentiments_vs_TwoDayStocks_@Macys.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/TwoDaySentiments_vs_TwoDayStocks_@Visa.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/TwoDaySentiments_vs_TwoDayStocks_@Walmart.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu_weekly" class="container tab-pane fade">
+        <br>
+        <h3>Weekly average stock prices and sentiments</h3>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/WeeklySentiments_vs_WeeklyStocks_@amazon.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/WeeklySentiments_vs_WeeklyStocks_@Apple.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/WeeklySentiments_vs_WeeklyStocks_@netflix.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/WeeklySentiments_vs_WeeklyStocks_@Nike.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/WeeklySentiments_vs_WeeklyStocks_@Macys.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/WeeklySentiments_vs_WeeklyStocks_@Visa.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/WeeklySentiments_vs_WeeklyStocks_@Walmart.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu_stocks" class="container tab-pane fade">
+        <br>
+        <h3>Stock prices (daily, two-day, weekly) averages</h3>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/ppt/Stocks_Closing_AMZN.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/ppt/Stocks_Closing_AAPL.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/ppt/Stocks_Closing_NFLX.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/ppt/Stocks_Closing_NKE.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/ppt/Stocks_Closing_M.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/ppt/Stocks_Closing_V.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <img src="figures/ppt/Stocks_Closing_WMT.png" style="padding:5%;height:90%;width:90%">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu_presentation" class="container tab-pane fade">
+          <br>
+          <h3>Presentation</h3>
+          <div>
+              <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSXDkztJS09C1-dghJfR3ZhGhouIuDtOApensspuIUKsw7BO-APJbMaVP53-k3Y6yigSNDGtv12PeJM/embed?start=false&loop=true&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+          </div>
+      </div>
+      <div id="menu_about" class="container tab-pane fade">
+          <br>
+          <h3>About</h3>
+          <div>
+             Tweet Street is an exploratory data analysis to gain insights on stock market and tweets, in attempts to find correlation. 
+             <ul>
+               <li> <a href="https://github.com/sadhana1002/">Sadhana Sankar</a></li>
+               <li> <a href="https://github.com/abhinav2313">Abhinav Sharma</a></li>
+               <li> <a href="https://github.com/ashleyna94">Ashley Na     </a></li>
+               <li> <a href="https://github.com/jjlliinn12">Jason Lin     </a></li>
+             </ul>
+             Presentation of this project is available in the below link from minutes 15 - 30, can be found <a href="https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5886f024-de35-4b19-a8e0-c644c63126e4">here. </a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
