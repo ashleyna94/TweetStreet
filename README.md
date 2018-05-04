@@ -170,59 +170,59 @@ for ticker in tickers:
 ```
 
 
-![png](output_4_0.png)
+![png](images/output_4_0.png)
 
 
 
-![png](output_4_1.png)
+![png](images/output_4_1.png)
 
 
 
-![png](output_4_2.png)
+![png](images/output_4_2.png)
 
 
 
-![png](output_4_3.png)
+![png](images/output_4_3.png)
 
 
 
-![png](output_4_4.png)
+![png](images/output_4_4.png)
 
 
 
-![png](output_4_5.png)
+![png](images/output_4_5.png)
 
 
 
-![png](output_4_6.png)
+![png](images/output_4_6.png)
 
 
 
-![png](output_4_7.png)
+![png](images/output_4_7.png)
 
 
 
-![png](output_4_8.png)
+![png](images/output_4_8.png)
 
 
 
-![png](output_4_9.png)
+![png](images/output_4_9.png)
 
 
 
-![png](output_4_10.png)
+![png](images/output_4_10.png)
 
 
 
-![png](output_4_11.png)
+![png](images/output_4_11.png)
 
 
 
-![png](output_4_12.png)
+![png](images/output_4_12.png)
 
 
 
-![png](output_4_13.png)
+![png](images/output_4_13.png)
 
 
 
@@ -325,7 +325,7 @@ company_summary
 
 
 <div>
-<style>
+<!-- <style>
     .dataframe thead tr:only-child th {
         text-align: right;
     }
@@ -337,7 +337,7 @@ company_summary
     .dataframe tbody tr th {
         vertical-align: top;
     }
-</style>
+</style> -->
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -418,67 +418,67 @@ plt.show()
 ```
 
 
-![png](output_7_0.png)
+![png](images/output_7_0.png)
 
 
 
-![png](output_7_1.png)
+![png](images/output_7_1.png)
 
 
 
-![png](output_7_2.png)
+![png](images/output_7_2.png)
 
 
 
-![png](output_7_3.png)
+![png](images/output_7_3.png)
 
 
 
-![png](output_7_4.png)
+![png](images/output_7_4.png)
 
 
 
-![png](output_7_5.png)
+![png](images/output_7_5.png)
 
 
 
-![png](output_7_6.png)
+![png](images/output_7_6.png)
 
 
 
-![png](output_7_7.png)
+![png](images/output_7_7.png)
 
 
 
-![png](output_7_8.png)
+![png](images/output_7_8.png)
 
 
 
-![png](output_7_9.png)
+![png](images/output_7_9.png)
 
 
 
-![png](output_7_10.png)
+![png](images/output_7_10.png)
 
 
 
-![png](output_7_11.png)
+![png](images/output_7_11.png)
 
 
 
-![png](output_7_12.png)
+![png](images/output_7_12.png)
 
 
 
-![png](output_7_13.png)
+![png](images/output_7_13.png)
 
 
 
-![png](output_7_14.png)
+![png](images/output_7_14.png)
 
 
 
-![png](output_7_15.png)
+![png](images/output_7_15.png)
 
 
 
@@ -502,9 +502,9 @@ plt.show()
 ```
 
 
-![png](output_8_0.png)
+![png](images/output_8_0.png)
 
 
 
-![png](output_8_1.png)
+![png](images/output_8_1.png)
 
