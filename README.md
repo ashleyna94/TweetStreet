@@ -22,6 +22,7 @@ Here are the following visualizations in order:
 
 #### Data Sources:
 Jefferson-Henrique GitHub Project (Historic Tweets), Tweepy (Daily Tweets)
+
 Yahoo Finance(Historic Stocks), IEX API(Daily Stocks)
 
 -----
