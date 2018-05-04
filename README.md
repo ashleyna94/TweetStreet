@@ -11,6 +11,7 @@
 #### Project Overview:
 Tweet Street is a data analysis project to identify if any correlation exists between tweet sentiments and stock prices.
 Our target stocks are: Amazon, Apple, Macy's, Netflix, Nike, Visa, and Walmart. 
+
 Here are the following visualizations in order:
 * Compound sentiments 
 * Average stock prices (daily, two-day, weekly)
