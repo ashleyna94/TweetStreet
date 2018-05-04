@@ -1,4 +1,30 @@
+# TweetStreet 
 
+#### Team: 
+* [Sadhana Sankar](https://github.com/sadhana1002)
+* [Abhinav Sharma](https://github.com/abhinav2313)
+* [Ashley Na](https://github.com/ashleyna94/ashley-na)
+* [Jason Lin](https://github.com/jjlliinn12)
+
+-----
+
+#### Project Overview:
+Tweet Street is a data analysis project to identify if any correlation exists between tweet sentiments and stock prices.
+Our target stocks are: Amazon, Apple, Macy's, Netflix, Nike, Visa, and Walmart. 
+Here are the following visualizations in order:
+* Compound sentiments 
+* Average stock prices (daily, two-day, weekly)
+* Moving averages of stock prices (weekly) vs Tweet sentiments
+* Stock closing prices vs Tweet sentiments
+* Percentage comparisons of target stocks 
+
+----- 
+
+#### Data Sources:
+Jefferson-Henrique GitHub Project (Historic Tweets), Tweepy (Daily Tweets)
+Yahoo Finance(Historic Stocks), IEX API(Daily Stocks)
+
+-----
 
 ```python
 import pandas as pd
